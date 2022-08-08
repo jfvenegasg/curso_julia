@@ -88,3 +88,35 @@ for i in numeros
     sum=sum+1/i
     print("La suma es:",sum,"El i es:",i,"\n")
 end
+
+# Funciones en Julia
+
+function sum_zeta(s,nterms)
+    x=0
+    for n in 1:nterms
+        x=x+(1/n)^s
+    end
+    return x
+end
+
+sum_zeta(1,3)
+
+function sum_n(num,exp=1)
+    x=0
+    for i in 1:num
+       x=(x+i)^exp
+       y=(x+i)*exp
+    end
+    return x,y,exp
+end
+
+salida=sum_n(3,2)
+salida[2]
+
+# LLamar a funcion que esta en un archivo diferente
+
+include("my_fun.jl")
+
+salida=suma_exp(3)
+
+salida[1]
