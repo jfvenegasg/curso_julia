@@ -42,15 +42,49 @@ using Printf
 str = @sprintf("Archimedes approximated pi to 22/7, which is %.2f ", 3.14)
 
 
+# Ciclo for sencillo
 x=0
 
 for k in 1:100
     x=x+(1/k)^2    
 end
 
+# Ciclo  for complejo
+
 x=0
 for k in 1:100000
     term = (1/k)^2
     x = x + term
     if (abs(term) < 1e-10) break end
+end
+
+# Ciclo  for anidado con break
+
+for i in 1:5
+    for j in 1:5
+        if i==4 break end
+        print("El valor de i=",i," El valor de j=",j,"\n")       
+    end
+end
+
+# Ciclo  while
+
+x=0
+iter=0
+
+while iter<10
+    x=x*2
+    iter=iter+1
+    print("El valor de x es:",x," y el valor de la iteracion es",iter,"\n")
+end
+
+# Ciclo for con condicional y continue
+
+numeros=randn(100)
+sum=0
+
+for i in numeros
+    if i==0 continue end
+    sum=sum+1/i
+    print("La suma es:",sum,"El i es:",i,"\n")
 end
