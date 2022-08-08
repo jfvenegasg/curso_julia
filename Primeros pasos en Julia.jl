@@ -120,3 +120,46 @@ include("my_fun.jl")
 salida=suma_exp(3)
 
 salida[1]
+
+# Estructuras de datos
+
+## Matrices
+
+A=[1 2 3;4 5 6; 7 8 9]
+
+A=[1 2 3;
+   4 5 6;
+   7 8 9]
+
+## vectores
+
+b1=[1 ,2 ,3]
+b2=[4 ,5 ,6]
+
+b3=["hola",1,2,3]
+
+v=[n^2 for n=1:1000]
+
+
+sum(v)
+
+## Definicion de estructuras indefinidas con tamaño asignado
+n = 5
+A1 = Array{Float64}(undef,n,n)          # 5×5 Matrix{Float64}
+A2 = Matrix{Float64}(undef,n,n)         # 5×5 Matrix{Float64}
+
+V1 = Array{Float64}(undef,0)            # 5-element Vector{Float64}
+V2 = Vector{Float64}(undef,n)
+
+
+A1[1]=1
+
+matriz_0=zeros(3,3)
+matriz_1=ones(4,1)
+
+alea=rand(3,3)
+
+# Libreria de algebra lineal
+
+using LinearAlgebra
+M=5I+zeros(2,2)
