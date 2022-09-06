@@ -17884,7 +17884,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <li><a href="#Variables-basicas">Variables básicas</a></li>
 <li><a href="#Ciclos">Ciclos</a></li>
 <li><a href="#Funciones">Funciones</a></li>
-<li><a href="#Graficos">Gráficos</a></li>
+<li><a href="#Diccionarios">Diccionarios</a></li>
 </ol>
 
 </div>
@@ -19312,8 +19312,340 @@ A es positivo
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a id='Graficos'></a></p>
-<h3 id="Gr%C3%A1ficos-%F0%9F%93%8A">Gr&#225;ficos &#128202;<a class="anchor-link" href="#Gr%C3%A1ficos-%F0%9F%93%8A">&#182;</a></h3><p><a href="#Indice">Inicio ▲</a></p>
+<p><a id='Diccionarios'></a></p>
+<h3 id="Diccionarios-%F0%9F%93%8A">Diccionarios &#128202;<a class="anchor-link" href="#Diccionarios-%F0%9F%93%8A">&#182;</a></h3><p><a href="#Indice">Inicio ▲</a></p>
+<p>Un tipo de estructura importante en Julia asi como en otros lenguajes como Python son los diccionarios.Estos tienen algunos elementos en común con las matrices,pero son de un uso mas general 📚.</p>
+<p>Un diccionario contiene un conjunto de índices correspondientes a las *<strong>claves</strong>* y otro conjunto correspondiente a los *<strong>valores</strong><em>.De esta forma cada clave se asocia a un único valor,llamando a esta asociación par </em>clave-valor*.</p>
+<p>Tal vez de forma similar a lo que podemos hacer en Python con algunas librerias, en Julia podemos hacer uso de la función <em>Dict()</em> para crear un nuevo diccionario que inicialmente no guarde ningún par *<strong>clave-valor</strong>*.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">diccionario</span><span class="o">=</span><span class="kt">Dict</span><span class="p">()</span><span class="w"></span>
+
+<span class="n">diccionario</span><span class="w"></span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Dict{Any, Any}()</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Sin embargo si quisieramos agregar un par clave-valor,podríamos utilizar la siguiente sintáxis.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">diccionario</span><span class="p">[</span><span class="s">"primero"</span><span class="p">]</span><span class="o">=</span><span class="mi">2</span><span class="w"></span>
+
+<span class="n">diccionario</span><span class="w"></span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Dict{Any, Any} with 1 entry:
+  &#34;primero&#34; =&gt; 2</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Como se observa en la salida del diccionario,aca solo contamos con un único par clave-valor.En donde la llave es la cadena &quot;primero&quot; y el valor es 2</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Pero si buscamos tener un diccionario con una mayor cantidad de pares,podemos hacer lo siguiente.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">diccionario</span><span class="o">=</span><span class="kt">Dict</span><span class="p">(</span><span class="s">"primero"</span><span class="o">=&gt;</span><span class="mi">1</span><span class="p">,</span><span class="s">"segundo"</span><span class="o">=&gt;</span><span class="mi">2</span><span class="p">,</span><span class="s">"tercero"</span><span class="o">=&gt;</span><span class="mi">3</span><span class="p">,</span><span class="s">"cuarto"</span><span class="o">=&gt;</span><span class="mi">4</span><span class="p">,</span><span class="s">"quinto"</span><span class="o">=&gt;</span><span class="mi">5</span><span class="p">)</span><span class="w"></span>
+
+<span class="n">diccionario</span><span class="w"></span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Dict{String, Int64} with 5 entries:
+  &#34;segundo&#34; =&gt; 2
+  &#34;primero&#34; =&gt; 1
+  &#34;cuarto&#34;  =&gt; 4
+  &#34;quinto&#34;  =&gt; 5
+  &#34;tercero&#34; =&gt; 3</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Como podemos ver,en este caso ya contamos con un diccionario que cuenta con 5 pares,en donde llaves son del tipo *<strong>&quot;String&quot;</strong>* y los valores son del tipo *<strong>&quot;Int64&quot;</strong>*.Sin embargo los pares no se muestran en el mismo orden en que realizamos su definición,lo cual es irrelevante en los diccionarios ya que las pares no se crean de forma correlativa y generalmente llamaremos a la llave para obtener el valor que deseamos.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>En este contexto si contamos con diccionarios con una mayor longitud,en muchas ocasiones habran algunas caracteristicas que no son tan evidentes🧭  como en el diccionario que ya hemos definido 📕.</p>
+<p>Para esto podemos utilizar algunas de las funciones que vienen precargadas en Julia... las cuales utilizaremos a continuación.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">Una</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">las</span><span class="w"> </span><span class="n">primeras</span><span class="w"> </span><span class="n">cosas</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">podemos</span><span class="w"> </span><span class="n">hacer</span><span class="w"> </span><span class="n">es</span><span class="w"> </span><span class="n">buscar</span><span class="w"> </span><span class="n">un</span><span class="w"> </span><span class="n">valor</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">el</span><span class="w"> </span><span class="n">diccionario</span><span class="w"> </span><span class="n">por</span><span class="w"> </span><span class="n">su</span><span class="w"> </span><span class="n">llave</span><span class="w"></span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">diccionario</span><span class="o">=</span><span class="kt">Dict</span><span class="p">(</span><span class="s">"primero"</span><span class="o">=&gt;</span><span class="mi">1</span><span class="p">,</span><span class="s">"segundo"</span><span class="o">=&gt;</span><span class="mi">2</span><span class="p">,</span><span class="s">"tercero"</span><span class="o">=&gt;</span><span class="mi">3</span><span class="p">,</span><span class="s">"cuarto"</span><span class="o">=&gt;</span><span class="mi">4</span><span class="p">,</span><span class="s">"quinto"</span><span class="o">=&gt;</span><span class="mi">5</span><span class="p">)</span><span class="w"></span>
+
+<span class="n">diccionario</span><span class="p">[</span><span class="s">"quinto"</span><span class="p">]</span><span class="w"></span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>5</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Como podemos ver, si buscamos el valor que esta asignado a la llave <strong>&quot;quinto&quot;</strong>,obtenemos el valor que ya habiamos definido</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">Sin</span><span class="w"> </span><span class="n">embargo</span><span class="p">,</span><span class="n">en</span><span class="w"> </span><span class="n">algunas</span><span class="w"> </span><span class="n">ocasiones</span><span class="w"> </span><span class="n">no</span><span class="w"> </span><span class="n">sabremos</span><span class="w"> </span><span class="n">exactamente</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">pares</span><span class="w"> </span><span class="n">tenemos</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">los</span><span class="w"> </span><span class="n">nombres</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">ellos</span><span class="o">.</span><span class="n">Para</span><span class="w"> </span><span class="n">esto</span><span class="w"> </span><span class="n">primero</span><span class="w"> </span><span class="n">podemos</span><span class="w"> </span><span class="n">verificar</span><span class="w"> </span><span class="n">el</span><span class="w"> </span><span class="n">largo</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">nuestro</span><span class="w"> </span><span class="n">diccionario</span><span class="o">.</span><span class="w"></span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">largo</span><span class="o">=</span><span class="n">length</span><span class="p">(</span><span class="n">diccionario</span><span class="p">)</span><span class="w"></span>
+<span class="n">println</span><span class="p">(</span><span class="n">largo</span><span class="p">)</span><span class="w"></span>
+
+<span class="n">llaves</span><span class="o">=</span><span class="n">keys</span><span class="p">(</span><span class="n">diccionario</span><span class="p">)</span><span class="w"></span>
+<span class="n">println</span><span class="p">(</span><span class="n">llaves</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>5
+[&#34;segundo&#34;, &#34;primero&#34;, &#34;cuarto&#34;, &#34;quinto&#34;, &#34;tercero&#34;]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>En este utilizamos 2 funciones para hacer un barrido a nuestro diccionario.Primero verificamos el largo de nuestro diccionario con la función <strong>length()</strong> y luego usamos la función <strong>keys()</strong> para verificar cuales son todas las llaves que podemos llamar... lo que podemos verificar rapidamente porque no es muy extenso este diccionario 📋.</p>
 
 </div>
 </div>
