@@ -14614,105 +14614,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="n">WebIO</span><span class="p">,</span><span class="n">IJulia</span><span class="w"></span>
-<span class="n">WebIO</span><span class="o">.</span><span class="n">install_jupyter_labextension</span><span class="p">()</span><span class="w"></span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-The WebIO Jupyter extension must be installed using Python or Conda. See https://juliagizmos.github.io/WebIO.jl/latest/providers/ijulia/ for more information.
-
-Stacktrace:
- [1] error(s::String)
-   @ Base .\error.jl:35
- [2] _error()
-   @ WebIO C:\Users\Administrator\.julia\packages\WebIO\4JqEH\deps\jupyter.jl:1
- [3] install_jupyter_labextension(; kwargs::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-   @ WebIO C:\Users\Administrator\.julia\packages\WebIO\4JqEH\deps\jupyter.jl:9
- [4] install_jupyter_labextension()
-   @ WebIO C:\Users\Administrator\.julia\packages\WebIO\4JqEH\deps\jupyter.jl:9
- [5] top-level scope
-   @ In[2]:2
- [6] eval
-   @ .\boot.jl:368 [inlined]
- [7] include_string(mapexpr::typeof(REPL.softscope), mod::Module, code::String, filename::String)
-   @ Base .\loading.jl:1428</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">python3</span><span class="w"> </span><span class="o">-</span><span class="n">m</span><span class="w"> </span><span class="n">pip</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">webio_jupyter_extension</span><span class="w"></span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-syntax: extra token "pip" after end of expression
-
-Stacktrace:
- [1] top-level scope
-   @ In[4]:1
- [2] eval
-   @ .\boot.jl:368 [inlined]
- [3] include_string(mapexpr::typeof(REPL.softscope), mod::Module, code::String, filename::String)
-   @ Base .\loading.jl:1428</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14743,10 +14644,10 @@ Stacktrace:
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><a id="Introduccion"></a></p>
 <h3 id="Introducci%C3%B3n-%F0%9F%8E%AF">Introducción 🎯<a class="anchor-link" href="#Introducci%C3%B3n-%F0%9F%8E%AF">¶</a></h3><p><a href="#Indice">Inicio ▲</a></p>
-<p>Julia es un lenguaje de proposito general de código abierto,dinámico y de alto rendimiento basado en un compilador avanzado (JIT),que permite que el código se ejecute rápido como si fuera compilado.</p>
+<p>Julia es un lenguaje de propósito general de código abierto,dinámico y de alto rendimiento basado en un compilador avanzado (JIT),que permite que el código se ejecute rápido como si fuera compilado.</p>
 <p>Sin embargo,algunas de las caracteristicas mas interesantes de Julia para Ciencias e Ingeniería,son las siguientes:</p>
 <ul>
-<li><p>Sintáxis Matemáticas: Lleva el lenguaje matematico al codigo de programación similar a como lo realizan software como Mathematica.</p>
+<li><p>Sintáxis Matemáticas: Lleva el lenguaje matemático al código de programación similar a como lo realizan software como Mathematica.</p>
 </li>
 <li><p>Buen desempeño: Tiene un rendimiento similar a lenguajes compilados como C.</p>
 </li>
@@ -14755,7 +14656,7 @@ Stacktrace:
 <li><p>Entre otros...</p>
 </li>
 </ul>
-<p>La última versión descargable de Julia es la versión 1.7.3 y la puedes descargar desde el siguiente enlance <a href="https://julialang.org/downloads/">Julia</a>.Además puedes instalar algunos Entornos de desarrollo para utilizar Julia como <a href="https://code.visualstudio.com/">VSCode</a> o incluso puedes utilizar la Suite <a href="https://jupyter.org/">JupyterLab</a>.</p>
+<p>La última versión descargable de Julia es la versión 1.8.1 y la puedes descargar desde el siguiente enlance <a href="https://julialang.org/downloads/">Julia</a>.Además puedes instalar algunos Entornos de desarrollo para utilizar Julia como <a href="https://code.visualstudio.com/">VSCode</a> o incluso puedes utilizar la Suite <a href="https://jupyter.org/">JupyterLab</a>.Sin embargo en este curso utilizaremos la versión 1.7.3.</p>
 
 </div>
 </div>
@@ -14861,8 +14762,8 @@ Stacktrace:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>En este caso definimos la variable x que almacena el valor <strong>10</strong> y la variable y que almacena el texto <strong>"Proyecto exitoso"</strong>.Luego verificamos el tipo de variable que es cada una,mediante la funcion <strong>typeof()</strong>.</p>
-<p>Sin embargo,tal vez una de las caracteristicas mas importantes de Julia es la existencia de jerarquia en las variables numéricas.De esta forma, es posible transformar un valor entero en formatos de <strong>Float64</strong>,<strong>Float32</strong> o <strong>Float16</strong> correspondientes a numeros de doble,unica o la mitad de la precisión.</p>
+<p>En este caso definimos la variable *<strong>x</strong>* que almacena el valor <strong>10</strong> y la variable y que almacena el texto <strong>"Proyecto exitoso"</strong>.Luego verificamos el tipo de variable que es cada una,mediante la funcion <strong>typeof()</strong>.</p>
+<p>Sin embargo,tal vez una de las características mas importantes de Julia es la existencia de jerarquía en las variables numéricas.De esta forma, es posible transformar un valor entero en formatos de <strong>Float64</strong>,<strong>Float32</strong> o <strong>Float16</strong> correspondientes a números de doble,única o la mitad de la precisión.</p>
 
 </div>
 </div>
@@ -14991,18 +14892,18 @@ Stacktrace:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Si queremos realizar la operación inversa,transformar una variable float en integer,no siempre sera valida debido a la jerarquia en las variables.Es por esto que es preferible utilizar funciones como <strong>ceil()</strong>,<strong>floor()</strong> o <strong>round()</strong>.</p>
+<p>Si queremos realizar la operación inversa,transformar una variable float en integer,no siempre sera válida debido a la jerarquía en las variables.Es por esto que es preferible utilizar funciones como <strong>ceil()</strong>,<strong>floor()</strong> o <strong>round()</strong>.</p>
 <p>Si consideramos el siguiente caso</p>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-julia"><pre><span></span><span class="kt">Int64</span><span class="p">(</span><span class="mf">2.4</span><span class="p">)</span><span class="w"></span>
@@ -15011,29 +14912,6 @@ Stacktrace:
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>2</pre>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -15172,7 +15050,7 @@ Stacktrace:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>En los 3 casos estamos transformando el mismo valor decimal,sin embargo la funcion determina si se redondea al valor mas cercano hacia abajo o hacia arriba.</p>
+<p>En los 3 casos estamos transformando el mismo valor decimal,sin embargo la función determina si se redondea al valor mas cercano hacia abajo o hacia arriba.</p>
 
 </div>
 </div>
@@ -15186,8 +15064,8 @@ Stacktrace:
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><a id="Ciclos"></a></p>
 <h3 id="Ciclos-%F0%9F%8E%A2">Ciclos 🎢<a class="anchor-link" href="#Ciclos-%F0%9F%8E%A2">¶</a></h3><p><a href="#Indice">Inicio ▲</a></p>
-<p>Uno de los aspectos mas importantes en la mayoria de los lenguajes, son los ciclos o loops para el desarrollo de iteraciones en distintos contextos,ya sean recorrer los valores en una lista o matriz,iterar una función, imprimir mensajes por pantalla con alguna variable que cambia de valor,entre otros aspectos.</p>
-<p>Uno de los primeros puntos que podemos ver es la sintáxis,la cual es muy similar a lenguajes como Matlab o R,en donde usamos la funcion <strong>println()</strong>,ya que nos permite imprimir cada valor de <strong>i</strong> en una nueva linea.</p>
+<p>Uno de los aspectos mas importantes en la mayoría de los lenguajes, son los ciclos o loops para el desarrollo de iteraciones en distintos contextos,ya sea recorrer los valores en una lista o matriz,iterar una función, imprimir mensajes por pantalla con alguna variable que cambia de valor,entre otros aspectos.</p>
+<p>Uno de los primeros puntos que podemos ver es la sintáxis,la cual es muy similar a lenguajes como Matlab o R,en donde usamos la funcion <strong>println()</strong>,ya que nos permite imprimir cada valor de <strong>i</strong> en una nueva línea.</p>
 
 </div>
 </div>
@@ -15247,7 +15125,7 @@ Stacktrace:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>En caso contrario si usamos en Julia la funcion <strong>print()</strong> obtenemos la misma secuencia pero se imprimen todos los valores en la misma linea.</p>
+<p>En caso contrario si usamos en Julia la funcion <strong>print()</strong> obtenemos la misma secuencia pero se imprimen todos los valores en la misma línea.</p>
 
 </div>
 </div>
@@ -15407,9 +15285,9 @@ s
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Afortunadamente no solo existe el ciclo for para realizar iteraciones.Sino que también podemos hacer uso del ciclo while,el cual tiene una sintaxis un poco mas breve,pero que sin embargo debemos tener algunos cuidados.</p>
-<p>En este caso el ciclo while se ejecuta siempre que sea cierta la condición lógica,pero en el caso que la condición logica deje de ser verdadera se ejecuta el codigo que viene despues de la palabra reservada <strong>end</strong></p>
-<p>Una sintáxis clasica es el homólogo del ciclo for</p>
+<p>Afortunadamente no solo existe el ciclo for para realizar iteraciones.Sino que también podemos hacer uso del ciclo *<strong>while</strong>*,el cual tiene una sintáxis un poco mas breve,pero que sin embargo debemos tener algunos cuidados.</p>
+<p>En este caso el ciclo while se ejecuta siempre que sea cierta la condición lógica,pero en el caso que la condición logica deje de ser verdadera se ejecuta el código que viene despues de la palabra reservada <strong>end</strong></p>
+<p>Una sintáxis clásica es el homólogo del ciclo for.</p>
 
 </div>
 </div>
@@ -15471,7 +15349,7 @@ s
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>En este caso a diferencia del ciclo <strong>for</strong>,primero tenemos que inicializar la variable <strong>i</strong>,para luego definir la condición lógica,que en este caso es que mientras i sea menor o igual que 10 se debe imprimir las instrucciones que se encuentran en el bloque.Luego definimos 2 instrucciones,primero que se imprima el valor de <strong>i</strong> para luego redefinir el valor de i como <strong>i=i+1</strong>,asi de esta forma en cada iteración el valor de i va aumentando en 1.🪃</p>
+<p>En este caso a diferencia del ciclo <strong>for</strong>,primero tenemos que inicializar la variable <strong>i</strong>,para luego definir la condición lógica, en este caso mientras i sea menor o igual que 10 se debe imprimir las instrucciones que se encuentran en el bloque.Luego definimos 2 instrucciones,primero que se imprima el valor de <strong>i</strong> para luego redefinir el valor de i como <strong>i=i+1</strong>,asi de esta forma en cada iteración el valor de i va aumentando en 1.🪃</p>
 
 </div>
 </div>
@@ -15597,7 +15475,7 @@ s
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Y tal vez uno de los favoritos para muchos son los ciclos anidados 🙄.En general cuando hablamos de ciclos anidados hacemos referencia a incluir un ciclo dentro de otro,algo tipico que podriamos ver seria lo siguiente.</p>
+<p>Y tal vez uno de los favoritos para muchos son los ciclos anidados 🙄.En general cuando hablamos de ciclos anidados hacemos referencia a incluir un ciclo dentro de otro,algo típico que podriamos ver seria lo siguiente.</p>
 
 </div>
 </div>
@@ -15671,7 +15549,7 @@ los valores que puede tomar la variable *<strong>j</strong><em>.De esta forma cu
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Haciendo uso de ciclos pero esta vez de forma separada,podriamos hacer algo un poco mas matematico.🤓</p>
+<p>Haciendo uso de ciclos pero esta vez de forma separada,podriamos hacer algo un poco mas matemático.🤓</p>
 
 </div>
 </div>
@@ -15737,11 +15615,11 @@ los valores que puede tomar la variable *<strong>j</strong><em>.De esta forma cu
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Un último importante y no menor,es algo que vimos de forma indirecta en uno de los ciclos anteriormente y corresponde a los condicionales y operadores lógicos.</p>
-<p>Los condicionales sirven para ejecutar una instrucción siempre que se cumpla una condición.Sin embargo,podemos verificar n condiciones si fuera necesario las cuales las podemos realizar mediante operadores lógicos.</p>
+<p>Los *<strong>condicionales</strong>* sirven para ejecutar una instrucción siempre que se cumpla una condición.Sin embargo,podemos verificar n condiciones si fuera necesario las cuales las podemos realizar mediante operadores lógicos.</p>
 <table><tr><th>Operador </th><th></th><th> Descripción </th></tr><tr></tr><tr>
 </tr><tr><td> &lt; </td><td></td><td> Menor a </td><td></td></tr><tr>
 </tr><tr><td> &gt; </td><td></td><td> Mayor a </td><td></td></tr><tr>
-</tr><tr><td> &lt;= </td><td></td><td> Menor o igual a </td><td></td></tr><tr>
+</tr><tr><td> &lt; = </td><td></td><td> Menor o igual a </td><td></td></tr><tr>
 </tr><tr><td> &gt;= </td><td></td><td> Mayor o igual a </td><td></td></tr><tr>
 </tr><tr><td> == </td><td></td><td> Igual a </td><td></td></tr><tr>
 </tr><tr><td> != </td><td></td><td> No es igual a </td><td></td></tr><tr>
@@ -15753,7 +15631,7 @@ los valores que puede tomar la variable *<strong>j</strong><em>.De esta forma cu
 </tr><tr><td> all </td><td></td><td> Es verdadero si se cumple que todos los elementos de un arreglo booleano son Verdaderos. </td><td></td></tr><tr>
 </tr><tr><td> || </td><td></td><td> Menor a </td><td></td></tr><tr><table>
 <p>A pesar de ser una tabla un poco extensa... estos operadores si que son muy útiles.🧭</p>
-<p>Una caso bastante común es querer validar si un valor es positivo,negativo o igual a 0.Para esto utilizaremos una función que nos genere automaticamente numeros aleatorios.</p>
+<p>Una caso bastante común es querer validar si un valor es positivo,negativo o igual a 0.Para esto utilizaremos una función que nos genere automáticamente números aleatorios.</p>
 
 
 
@@ -15813,7 +15691,7 @@ A es positivo
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Así cada vez que se ejecute el bloque de código anterior,se genera un numero nuevo y se valida cualquiera de las 3 condiciones,devolviendonos el mensaje correspondiente.</p>
+<p>Así cada vez que se ejecute el bloque de código anterior,se genera un número nuevo y se valida cualquiera de las 3 condiciones,devolviendonos el mensaje correspondiente.</p>
 
 </div>
 </div>
@@ -16144,7 +16022,7 @@ A es positivo
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Como se ve pudimos editar la función,ahora la función <strong>saludo()</strong> acepta 3 parámetros de entrada los cuales corresponden al nombre,la edad y el saldo.Asi tambien se edito el texto que imprime la función,ya que ahora hace uso de los 2 nuevos parámetros</p>
+<p>Como se ve pudimos editar la función,ahora la función <strong>saludo()</strong> acepta 3 parámetros de entrada los cuales corresponden al nombre,la edad y el saldo.Así tambien se edito el texto que imprime la función,ya que ahora hace uso de los 2 nuevos parámetros</p>
 
 </div>
 </div>
@@ -16160,7 +16038,7 @@ A es positivo
 <h3 id="Diccionarios-%F0%9F%93%8A">Diccionarios 📊<a class="anchor-link" href="#Diccionarios-%F0%9F%93%8A">¶</a></h3><p><a href="#Indice">Inicio ▲</a></p>
 <p>Un tipo de estructura importante en Julia asi como en otros lenguajes como Python son los diccionarios.Estos tienen algunos elementos en común con las matrices,pero son de un uso mas general 📚.</p>
 <p>Un diccionario contiene un conjunto de índices correspondientes a las *<strong>claves</strong>* y otro conjunto correspondiente a los *<strong>valores</strong><em>.De esta forma cada clave se asocia a un único valor,llamando a esta asociación par </em>clave-valor*.</p>
-<p>Tal vez de forma similar a lo que podemos hacer en Python con algunas librerias, en Julia podemos hacer uso de la función <em>Dict()</em> para crear un nuevo diccionario que inicialmente no guarde ningún par *<strong>clave-valor</strong>*.</p>
+<p>Tal vez de forma similar a lo que podemos hacer en Python con algunas librerias, en Julia podemos hacer uso de la función *<strong>Dict()</strong>* para crear un nuevo diccionario que inicialmente no guarde ningún par *<strong>clave-valor</strong>*.</p>
 
 </div>
 </div>
@@ -16504,7 +16382,7 @@ A es positivo
 <p><a id="Paquetes"></a></p>
 <h3 id="Paquetes-%F0%9F%93%A6">Paquetes 📦<a class="anchor-link" href="#Paquetes-%F0%9F%93%A6">¶</a></h3><p><a href="#Indice">Inicio ▲</a></p>
 <p>Uno de los aspectos principales en lenguajes como Python,R,Julia y otros.Es la posibilidad de extender las capacidades del software.Es asi que mediante la carga de paquetes externos en Julia,podemos realizar calculos con algebra simbolica, realizar graficos,resolver problemas de optimización,entre otras tareas.</p>
-<p>Sin embargo en este primer curso introductorio de Julia abordaremos el desarrollo de cálculo con algebra simbolica y el desarrollo de graficos con la libreria Plotly.Cabe mencionar que esta última es una de mis preferidas...😁 principalmente porque obtenemos graficos interactivos con bastantes funcionalidades pero manteniendo una sintáxis sencilla y limpia.Además podemos encontrar esta libreria en lenguajes como R y Python.</p>
+<p>Sin embargo en este primer curso introductorio de Julia abordaremos el desarrollo de cálculo con algebra simbolica y el desarrollo de gráficos con el paquete Plots</p>
 
 </div>
 </div>
@@ -16516,7 +16394,7 @@ A es positivo
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Paquete-SymPy-%F0%9F%A7%AA">Paquete SymPy 🧪<a class="anchor-link" href="#Paquete-SymPy-%F0%9F%A7%AA">¶</a></h2><p>Sin embargo,la primera libreria que veremos es <strong>SymPy</strong> la cual nos permite declarar variables y funciones simbólicas,asi posteriormente podemos manipular estas expresiones y realizar la evaluación numérica.</p>
+<h2 id="Paquete-SymPy-%F0%9F%A7%AA">Paquete SymPy 🧪<a class="anchor-link" href="#Paquete-SymPy-%F0%9F%A7%AA">¶</a></h2><p>Sin embargo,la primera librería que veremos es <strong>SymPy</strong> la cual nos permite declarar variables y funciones simbólicas,asi posteriormente podemos manipular estas expresiones y realizar la evaluación numérica.</p>
 
 </div>
 </div>
@@ -16567,7 +16445,7 @@ A es positivo
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Luego tenemos 3 formas de definir las variables simbolicas,con las cuales queremos trabajar.La primera seria utilizar la función <strong>Sym()</strong>,como se muestra a continuación.</p>
+<p>Luego tenemos 3 formas de definir las variables simbólicas,con las cuales queremos trabajar.La primera seria utilizar la función <strong>Sym()</strong>,como se muestra a continuación.</p>
 
 </div>
 </div>
@@ -17129,9 +17007,10 @@ $\frac{37}{6}$
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Paquete-Plotly-%F0%9F%93%8A">Paquete Plotly 📊<a class="anchor-link" href="#Paquete-Plotly-%F0%9F%93%8A">¶</a></h2><p>Dejando un poco de lado la matemática un poco mas dura de la sección anterior... Sigamos con un tema un poco distinto,incluso tal vez un poco mas práctico.Si bien el desarrollo de visualizaciones efectivas con los datos correctos requiere de horas de trabajo,en esta sección veremos algunos de los graficos mas utilizados en Data Science.</p>
-<p>Alguno de los gráficos que se pueden desarrollar con Plotly y que veremos son los siguientes:</p>
+<h2 id="Paquete-Plots-%F0%9F%93%8A">Paquete Plots 📊<a class="anchor-link" href="#Paquete-Plots-%F0%9F%93%8A">¶</a></h2><p>Dejando un poco de lado la matemática un poco mas dura de la sección anterior...📎 Sigamos con un tema un poco distinto,incluso tal vez un poco mas práctico.Si bien el desarrollo de visualizaciones efectivas con los datos correctos requiere de horas de trabajo,en esta sección veremos algunos de los gráficos mas utilizados en Data Science.</p>
+<p>Alguno de los gráficos que se pueden desarrollar con el paquete Plots y que veremos son los siguientes:</p>
 <ul>
+<li>Gráficos de dispersión</li>
 <li>Gráficos de líneas</li>
 <li>Gráficos de barra</li>
 <li>Histogramas</li>
@@ -17148,7 +17027,7 @@ $\frac{37}{6}$
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Gr%C3%A1ficos-de-dispersi%C3%B3n">Gráficos de dispersión<a class="anchor-link" href="#Gr%C3%A1ficos-de-dispersi%C3%B3n">¶</a></h2><p>Siguiendo el orden la lista,el primero de ellos que veremos será el gráfico de líneas.Este tipo de gráfico generalmente lo usamos para visualizar un conjunto de pares ordenados,en donde posteriormente podemos trazar rectas que unan cada uno de estos pares,la sintáxis siguiente muestra como podemos desarrollar un gráfico de este tipo.Cabe destacar que en este caso estamos usando tanto la libreria PlotlyJS como DataFrames,esta última solo la estamos ocupando para generar el cuadro de datos.</p>
+<h2 id="Gr%C3%A1ficos-de-dispersi%C3%B3n">Gráficos de dispersión<a class="anchor-link" href="#Gr%C3%A1ficos-de-dispersi%C3%B3n">¶</a></h2><p>Uno de los gráficos mas utilizados en Data Science es el de dispersión,ya que nos permite realizar un primer análisis exploratorio de las variables de interés.De acuerdo a lo anterior,veremos un primer gráfico utilizando la libreria Plots que debemos cargar antes de utilizar en el entorno de Julia.A continuación veremos la sintáxis para el desarrollo de este tipo de gráfico.</p>
 
 </div>
 </div>
@@ -17161,9 +17040,8 @@ $\frac{37}{6}$
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="n">Plots</span><span class="p">,</span><span class="n">WebIO</span><span class="p">,</span><span class="n">IJulia</span><span class="w"></span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="n">Plots</span><span class="w"></span>
 
-<span class="c">## Lets jump right in</span><span class="w"></span>
 <span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rand</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="w"></span>
 <span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Plots</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="w"></span>
 </pre></div>
@@ -17192,7 +17070,7 @@ $\frac{37}{6}$
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Gr%C3%A1fico-de-l%C3%ADneas">Gráfico de líneas<a class="anchor-link" href="#Gr%C3%A1fico-de-l%C3%ADneas">¶</a></h2><p>Siguiendo el orden la lista,el primero de ellos que veremos será el gráfico de líneas.Este tipo de gráfico generalmente lo usamos para visualizar un conjunto de pares ordenados,en donde posteriormente podemos trazar rectas que unan cada uno de estos pares,la sintáxis siguiente muestra como podemos desarrollar un gráfico de este tipo.Cabe destacar que en este caso estamos usando tanto la libreria PlotlyJS como DataFrames,esta última solo la estamos ocupando para generar el cuadro de datos.</p>
+<h2 id="Gr%C3%A1fico-de-l%C3%ADneas">Gráfico de líneas<a class="anchor-link" href="#Gr%C3%A1fico-de-l%C3%ADneas">¶</a></h2><p>Siguiendo el orden la lista,el segundo de ellos que veremos será el gráfico de líneas.Este tipo de gráfico generalmente lo usamos para visualizar un conjunto de pares ordenados,en donde posteriormente podemos trazar rectas que unan cada uno de estos pares,la sintáxis siguiente muestra como podemos desarrollar un gráfico de este tipo.</p>
 
 </div>
 </div>
@@ -17205,9 +17083,8 @@ $\frac{37}{6}$
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="n">Plots</span><span class="p">,</span><span class="n">WebIO</span><span class="p">,</span><span class="n">IJulia</span><span class="w"></span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="n">Plots</span><span class="w"></span>
 
-<span class="c">## Lets jump right in</span><span class="w"></span>
 <span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rand</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="w"></span>
 <span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="w"></span>
 </pre></div>
@@ -17236,8 +17113,7 @@ $\frac{37}{6}$
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Gr%C3%A1fico-de-barras">Gráfico de barras<a class="anchor-link" href="#Gr%C3%A1fico-de-barras">¶</a></h2><p>Un segundo gráfico que es muy utilizado tanto en Data Science como en otras áreas ,son los gráficos de barra.Este tipo de gráfico nos permite desarrollar una visualización en donde trabajamos con 2 variables.En donde nuestra variable x corresponde a las categorías que queremos representar y la variable y a la magnitud o cantidades de cada una de estas categorías.</p>
-<p>A continuación podemos ver como desarrollar este tipo de gráfico mediante la sintáxis de Plotly.</p>
+<h2 id="Gr%C3%A1fico-de-barras">Gráfico de barras<a class="anchor-link" href="#Gr%C3%A1fico-de-barras">¶</a></h2><p>Un segundo gráfico que es muy utilizado tanto en Data Science como en otras áreas ,son los gráficos de barra.Este tipo de gráfico nos permite desarrollar una visualización en donde trabajamos con 2 variables.En donde nuestra variable *<strong>x</strong>* corresponde a las categorías que queremos representar y la variable *<strong>y</strong>* a la magnitud o cantidades de cada una de estas categorías.</p>
 
 </div>
 </div>
@@ -17250,9 +17126,8 @@ $\frac{37}{6}$
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="n">Plots</span><span class="p">,</span><span class="n">WebIO</span><span class="p">,</span><span class="n">IJulia</span><span class="w"></span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="n">Plots</span><span class="w"></span>
 
-<span class="c">## Lets jump right in</span><span class="w"></span>
 <span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rand</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="w"></span>
 <span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Plots</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="w"></span>
 <span class="n">f</span><span class="w"></span>
@@ -17282,8 +17157,7 @@ $\frac{37}{6}$
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Histogramas">Histogramas<a class="anchor-link" href="#Histogramas">¶</a></h2><p>A diferencia de los gráficos anteriores,el histograma es un tipo de visualización que nos permite visualizar las frecuencias acumuladas en una muestra.Si bien hay algunos conceptos y tópicos de mucho intéres que podemos analizar y verificar en un histograma,por ahora solo nos dedicaremos al desarrollo de este tipo de gráfico.</p>
-<p>Asi como usamos anteriormente,en este caso tambien utilizaremos el paquete DataFrames para la generación de los datos.</p>
+<h2 id="Histogramas">Histogramas<a class="anchor-link" href="#Histogramas">¶</a></h2><p>A diferencia de los gráficos anteriores,el histograma es un tipo de visualización que nos permite visualizar las frecuencias acumuladas en una muestra.Si bien hay algunos conceptos y tópicos de mucho intéres que podemos analizar y verificar en un histograma,por ahora solo nos dedicaremos al desarrollo de este tipo de gráfico.Además en este caso,agregamos el parámetro *<strong>nbins</strong>* el cual permite cambiar la cantidad de columnas que tiene el histograma,generalmente se prefiere el uso de un término impar ya que permite analizar visualmente la asimetría o curtosis,entre otras medidas.</p>
 
 </div>
 </div>
@@ -17296,9 +17170,8 @@ $\frac{37}{6}$
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="n">Plots</span><span class="p">,</span><span class="n">WebIO</span><span class="p">,</span><span class="n">IJulia</span><span class="w"></span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="n">Plots</span><span class="w"></span>
 
-<span class="c">## Lets jump right in</span><span class="w"></span>
 <span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rand</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="w"></span>
 <span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">histogram</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">nbins</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span><span class="w"></span>
 <span class="n">f</span><span class="w"></span>
@@ -17328,9 +17201,9 @@ $\frac{37}{6}$
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Diagramas-de-cajas">Diagramas de cajas<a class="anchor-link" href="#Diagramas-de-cajas">¶</a></h2><p>Y hemos llegado al final de esta sección... 😁.El último grafico que veremos sera el diagrama de cajas,el cual tiene algunas similitudes con el histograma pero sin duda que nos muestran aspectos distintos de una muestra.Las similitudes que comparten principalmente son las medidas estadisticas que podemos ver en ellos como la media,mediana,entre otros.</p>
+<h2 id="Diagramas-de-cajas">Diagramas de cajas<a class="anchor-link" href="#Diagramas-de-cajas">¶</a></h2><p>Y hemos llegado al final de esta sección... 😁.El último gráfico que veremos sera el diagrama de cajas,el cual tiene algunas similitudes con el histograma pero sin duda que nos muestran aspectos distintos de una muestra.Las similitudes que comparten principalmente son las medidas estadísticas que podemos ver en ellos como la media,mediana,entre otros.</p>
 <p>Sin embargo el diagrama de cajas es mucho más explícito para mostrar algunos estadísticos relevantes.</p>
-<p>A continuación vemos la sintáxis del diagrama de cajas,luego analizamos algunos de los estadísticos que observamos en la imagen.</p>
+<p>A continuación vemos la sintáxis del diagrama de cajas pero con el paquete StatsPlots y además haciendo uso del paquete Random,para la generación de números aleatorios,luego analizamos algunos de los estadísticos que observamos en la imagen.</p>
 
 </div>
 </div>
@@ -17343,7 +17216,14 @@ $\frac{37}{6}$
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-julia"><pre><span></span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="n">StatsPlots</span><span class="p">,</span><span class="w"> </span><span class="n">Random</span><span class="w"></span>
+
+<span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span><span class="w"></span>
+<span class="n">calculo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rand</span><span class="p">(</span><span class="mi">1</span><span class="o">:</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"></span>
+<span class="n">estadistica</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rand</span><span class="p">(</span><span class="mi">1</span><span class="o">:</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"></span>
+
+<span class="n">b</span><span class="o">=</span><span class="n">boxplot</span><span class="p">([</span><span class="n">calculo</span><span class="w"> </span><span class="n">estadistica</span><span class="p">],</span><span class="w"> </span><span class="n">label</span><span class="o">=</span><span class="p">[</span><span class="s">"Calculo"</span><span class="w"> </span><span class="s">"Estadística"</span><span class="p">])</span><span class="w"></span>
+<span class="n">b</span><span class="w"></span>
 </pre></div>
 
      </div>
@@ -17351,6 +17231,44 @@ $\frac{37}{6}$
 </div>
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<img src="data:image/png;base64,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AgAAkBESAACAjJAAAABkhAQAACDTMxTXyZ4CBgcH0+///u+nn/zkJ2UNAAB0l0cffTTdeOONZWnyTJmQEH71q1+lV155pSwBAEB3ueaaa9KcOXPK0uSZUiEBAAB4+4xJAAAAMkICAACQERIAAICMkAAAAGSEBAAAICMkAAAAGVOgdrEnnngi3X777WlgYCAtWLAgrV+/Pt15553loyOLi83dfffdZSkXr433CV/60pfSL37xi+J+o40bN5b3podTp06lRx55JD377LPFElpdB6+99lrx/Wzfvr24v3r16nTXXXedWceVeDyet3fv3rR48eLi/eO5082xY8fSd7/73WI979+/P1199dXpYx/7WPno6Pr7+9MXv/jF4u8g1vOyZcvS2rVr02233VY+4zTb9Fv+/d//Pf3rv/5r0YaEv/iLv0hLliwp7o+l1XUY77thw4Zi2261bZqqHnrooXG3H3G9n8985jNlKfenf/qn6brrrivuP/jgg8X7N2v1+5xKYlvbunXrmXZgxYoVRTtw6623ls8YXTx/3bp1Z7bXeF3j72Fl8+bNadOmTUVbHe1MfJfx70w3sR5iXVX7HrEOor0917po9TuK38Nmrf4ecH45k9Cl4g9s5cqV6cCBA8VOUjRWfX19xY/xWC666KI0f/78bNm1a1fR8F1wwVubwze/+c2ivvm5082RI0fSRz7ykfSNb3zjzHpq1Zo1a9K2bduKYBC3e/bsKb6zRtFYxvNWrVpVfI9xG+Won25++ctfpr/8y79MP/zhD4v1FdtgK772ta8V22b8DVTrMP4Omv8WbNNv+cQnPlFsl7FNxjYdF6JsRSvrsGqb4r2rtimWc7VNU9VNN91UtB+xLlptP6Itbl7H0dbH619//fXyWSn96Ec/Kv5Wmp87Y8aM8hnTR6yb+H+P7TrW9dKlS4sd0FbWebW9xrqMbTXeI0JDo3if2IZjhzbef9GiRUVbHYFhuokAFes31lcscaw51uG5fre2bNmSfUexDuM7ivpGsa6b25m5c+eWj1KrOJNA9xn+I40zQEPDPxxlzVt1hw4dKmtas2zZsqHhHauydNry5cuL9+Mt1fptxe7du4vnDjegZc3Q0HCjeFZdrPtY142GG9+hFStWlKXpKdZJ83oZzcGDB8t7b7ntttuGFixYUJZOs02frdom47YVrazD4Z2s4j3PR9s0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" width="500" height="500">
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>En la imagen observamos 2 gráficos de cajas,en donde se muestra la distribución de las notas de los cursos de Cálculo y Estadística.En ellos se observa que la distribución de las notas de Cálculo es mayor que la de estadística,ya que la *<strong>"caja"</strong>* es mas grande.Además la mediana correspondiente a la línea que se encuentra dentro de ambas cajas,en el caso de Cálculo es mayor.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Y llegamos al final de este curso introductorio con Julia para Data Science.Este curso presenta una guía práctica de como empezar a trabajar con Julia desde un punto de vista funcional,hay algunos conceptos que no se han considerado en este primer curso pero que en cursos posteriores profundizaremos mucho más como Algoritmos,desarrollo de visualizaciones e incluso Modelos de Machine Learning.</p>
+<p>Ante cualquier duda o comentario me puedes escribir a juan.venegas@uach.cl o j.venegasgutierrez@gmail.com</p>
+<p>Saludos 🌅</p>
+
+</div>
+</div>
+</div>
 </div>
 </table></tr></table></div></div></div></div></body>
 
